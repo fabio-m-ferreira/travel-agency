@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Tours</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" href="assets/css/dist/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:800|Roboto:300,400&display=swap" rel="stylesheet">
+    <link href="assets/css/dist//hamburgers/hamburgers.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/main.css'>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <a href="index.html">
+            <img src="assets/images/logo.png">
+        </a>
+        <nav>
+            <button id="hamburger-menu" class="btn hamburger hamburger--squeeze" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <div id="menu" class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Tours</a>
+                    </li>
+                    <li>
+                        <a href="index.html/#about">About</a>
+                    </li>
+                    <li>
+                        <a href="index.html/#contacts">Contacts</a>
+                    </li>
+                </ul>
+                <div id="login" class="login button">
+                    Sign Up
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <!-- End of Header -->
+
+    <!-- Tour Banner -->
+    <section id="tour-banner">
+        <div class="tour-banner-text">
+            <h1>All Tours For You</h1>
+            <h2>9 Tours Found</h2>
+        </div>
+    </section>
+    <!-- End of Tour Banner -->
+
+    <!-- TOURS -->
+    <section id="tours">
+        <div class="tours-filter-container">
+            <div>
+                <form>
+                    <!-- Search -->
+                    <div class="search">
+                        <label>
+                            <h2>Search</h2>
+                        </label>
+                        <input id="search" name="search" type="search" placeholder="Your Destination">
+                    </div>
+
+                    <!-- Price -->
+                    <div class="price">
+                        <label>
+                            <h2>Price</h2>
+                        </label>
+                        <div class="slider">
+                            <input type="range" min="0" max="13000" value="13000" oninput="outputUpdate(value)">
+                            <output id="volume">$ 13000</output>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Tours Filters -->
+                <div class="tour-categories">
+                    <h2>Categories</h2>
+                    <div class="tour-category active-category" data-category="all">All</div>
+                    <div class="tour-category" data-category="mountain-tours">Mountain Tours</div>
+                    <div class="tour-category" data-category="country-tours">Country Tours</div>
+                    <div class="tour-category" data-category="sea-tours">Sea Tours</div>
+                </div>
+            </div>
+        </div>
+        <div class="tour-grid">
+
+            <!-- Offer 1 -->
+            <div class="tour-box" data-price="5540" data-category="country-tours">
+                <img src="assets/images/tour-box1.jpg">
+                <div class="tour-box-text">
+                    <div class="main-text">
+                        <h3>Turkey</h3>
+                        <h3>$5,540</h3>
+                    </div>
+                    <p>Istanbul, Antalya, Ephesus</p>
+                </div>
+            </div>
+
+            <!-- Offer 2 -->
+            <div class="tour-box" data-price="7690" data-category="sea-tours">
+                <img src="assets/images/tour-box2.jpg">
+                <div class="tour-box-text">
+                    <div class="main-text">
+                        <h3>Spain</h3>
+                        <h3>$7,690</h3>
+                    </div>
+                    <p>Madrid, Andalucia, Barcelona</p>
+                </div>
+            </div>
+
+            <!-- Offer 3 -->
+            <div class="tour-box" data-price="5000" data-category="country-tours">
+                <img src="assets/images/tour-box3.jpg">
+                <div class="tour-box-text">
+                    <div class="main-text">
+                        <h3>United Kingdom</h3>
+                        <h3>$5,000</h3>
+                    </div>
+                    <p>England, Scotland, Wales</p>
+                </div>
+            </div>
+
+            <!-- Offer 4 -->
+            <div class="tour-box" data-price="11200" data-category="mountain-tours">
+                <img src="assets/images/tour-box4.jpg">
+                <div class="tour-box-text">
+                    <div class="main-text">
+                        <h3>Eastern Europe</h3>
+                        <h3>$11,200</h3>
+                    </div>
+                    <p>Slovenia, Hungary, Poland</p>
+                </div>
+            </div>
+
+            <!-- Offer 5 -->
+            <div class="tour-box" data-price="10349" data-category="country-tours">
+                <img src="assets/images/tour-box5.jpg">
+                <div class="tour-box-text">
+                    <div class="main-text">
+                        <h3>Italy</h3>
+                        <h3>$10,349</h3>
+                    </div>
+                    <p>Rome, Milan, Venice</p>
+                </div>
+            </div>
+
+            <!-- Offer 6 -->
+            <div class="tour-box" data-price="7008" data-category="mountain-tours">
+                <img src="assets/images/tour-box6.jpg">
+                <div class="tour-box-text">
+                    <div class="main-text">
+                        <h3>Swiss Alps</h3>
+                        <h3>$7,008</h3>
+                    </div>
+                    <p>Zurich, Geneve, Luzern</p>
+                </div>
+            </div>
+
+            <!-- Offer 7 -->
+            <div class="tour-box" data-price="12612" data-category="country-tours">
+                <img src="assets/images/tour-box1.jpg">
+                <div class="tour-box-text">
+                    <div class="main-text">
+                        <h3>India</h3>
+                        <h3>$12,612</h3>
+                    </div>
+                    <p>Delhi, Goa, Shimla</p>
+                </div>
+            </div>
+
+            <!-- Offer 8 -->
+            <div class="tour-box" data-price="1000" data-category="sea-tours">
+                <img src="assets/images/tour-box2.jpg">
+                <div class="tour-box-text">
+                    <div class="main-text">
+                        <h3>Portugal</h3>
+                        <h3>$1,000</h3>
+                    </div>
+                    <p>Lisbon, Porto, Algarve</p>
+                </div>
+            </div>
+
+            <!-- Offer 9 -->
+            <div class="tour-box" data-price="3476" data-category="mountain-tours">
+                <img src="assets/images/tour-box4.jpg">
+                <div class="tour-box-text">
+                    <div class="main-text">
+                        <h3>Northern Europe</h3>
+                        <h3>$3,476</h3>
+                    </div>
+                    <p>Denmark, Sweden, Norway</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Tours  -->
+
+    <!-- Javascript Interation Sections -->
+
+    <!-- Loader -->
+    <div class="loader">
+        <svg id="triangle" width="100px" height="100px" viewbox="-3 -4 39 39">
+            <polygon fill="#EFEFEF" stroke="#333333" stroke-width="1" points="16,0 32,32 0,32"></polygon>
+        </svg>
+    </div>
+
+    <!-- Login / Sign Up -->
+    <section id="login-section">
+        <div class="login-container">
+            <div class="login-form-container">
+                <div class="login-header">
+                    <h3>Sign Up</h3>
+                    <i class="close-login fa fa-times"></i>
+                </div>
+                <form class="login-form">
+                    <div class="username-input">
+                        <label for="text">Username</label>
+                        <input type="text" class="username" required>
+                    </div>
+                    <div class="email-input">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="email" required>
+                    </div>
+                    <div class="checkbox-input">
+                        <input type="checkbox" class="checkbox" value="TRUE">
+                        <label for="checkbox">Keep me Signed In</label>
+                    </div>
+                    <input class="submit" type="submit" value="Sign Up" />
+                    <div class="is-logged">
+                        <span>or</span>
+                        <button class="submit" id="sign-out">Sign Out</button>
+                    </div>
+                </form>
+            </div>
+            <div class="login-conclusion">
+                <h3>Thank you for your submission</h3>
+                <p>We've built an incredible travel agency, that gives full support in your tours</p>
+                <p>Now you have access to our amazing tours</p>
+                <button>Ok, Thank you</button>
+            </div>
+        </div>
+    </section>
+    <!-- End of Login / Sign Up -->
+
+    <!-- Tour Item -->
+    <section id="tour-item-container">
+        <img class="item-image" src="assets/images/tour-box1.jpg">
+        <div class="tour-item">
+            <div class="item-description">
+                <div class="item-header">
+                    <h3>Purchase Now</h3>
+                    <i class="close-item fa fa-times"></i>
+                </div>
+                <div class="item-text">
+                    <span>Name: &nbsp;</span>
+                    <p class="item-name">Item-name</p>
+                </div>
+                <div class="item-text">
+                    <span>Destinations: &nbsp;</span>
+                    <p class="item-desc">Item-Destination</p>
+                </div>
+                <div class="item-text">
+                    <span>Price: &nbsp;</span>
+                    <p class="item-price">Item-Price</p>
+                </div>
+                <button class="submit" id="item-button">Book Now</button>
+            </div>
+            <div class="item-conclusion">
+                <h3>Thank you for your submission</h3>
+                <p>We've built an incredible travel agency, that gives full support in your tours</p>
+                <p>You will recieve more details in your submited mail</p>
+                <button class="submit close-item">Ok, Thank you</button>
+            </div>
+        </div>
+    </section>
+    <!-- End of Tour Item -->
+
+    <!-- End of Javascript Interation Sections -->
+
+    <!-- Footer  -->
+    <footer id="contacts">
+        <div class="contacts-grid">
+            <div class="footer-logo">
+                <img src="assets/images/logo.png">
+                <p>Since 2002, we have been offering travel services of the highest quality, combining our energy and
+                    enthusiasm.</p>
+            </div>
+            <div class="our-contacts">
+                <h3>Our Contacts</h3>
+                <div class="our-contacts-grid">
+                    <div class="our-contacts-content">
+                        <i class="fa fa-map-marker"></i>
+                        <p>732/21 Second Street, Manchester, King Street, Kingston United Kingdom</p>
+                    </div>
+                    <div class="our-contacts-content">
+                        <i class="fa fa-phone"></i>
+                        <p>345-677-554</p>
+                    </div>
+                    <div class="our-contacts-content">
+                        <i class="fa fa-mobile-phone"></i>
+                        <p>345-677-554</p>
+                    </div>
+                    <div class="our-contacts-content">
+                        <i class="fa fa-mail-forward"></i>
+                        <p>www.etic.pt</p>
+                    </div>
+                </div>
+            </div>
+            <div class="follow">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <i class="fa fa-facebook-f"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-youtube"></i>
+                    <i class="fa fa-linkedin"></i>
+                </div>
+                <div class="login">Sign Up</div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                Copyright ©2020 <span>Travel</span>
+                . All Rights Reserved.
+            </p>
+            <div class="terms">
+                <p>Privacy Policy</p>
+                <p>Terms of Use</p>
+                <p>Contact Support</p>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- Back to Top -->
+    <a href="#">
+        <section class="back-to-top">
+            <i class="fa fa-arrow-up"></i>
+        </section>
+    </a>
+
+    <!--Javascript-->
+    <script src='assets/js/jquery.js'></script>
+    <script src='assets/js/main.js'></script>
+</body>
+
+</html>
